@@ -1,3 +1,50 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Merienda', cursive;
 }
+
+h1, h5 {
+    padding: 5px 0 5px 0;
+}
+
+
+/* header styling */
+#header {
+    width: 100%;
+    font-size: 1rem;
+    background-color: #191717;
+    color: #F1EFEF;
+    text-align: center;
+
+
+}
+
+
+/* Score Section Styling */
+#main-scores h3, #round-scores h3{
+    text-align: center;
+   
+}
+
+#main-scores, #round-scores {
+    border-bottom: 2px solid #191717;
+    padding: 0 5px 0 5px;
+    
+}
+
+.score-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.score-layout {
+    width: 50%; 
+}
+
+
+
