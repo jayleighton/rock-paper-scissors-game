@@ -5,11 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <section id="header">Header</section>
-    <section id="game-section"></section>
+    <section id="header">
+        <div class="title-bar">
+            <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+        </div>
+    </section>
+    <section id="game-section">
+        <div id="game-container">
+        <div id="main-scores">
+            <h3>Game Score</h3>
+            <div>
+                <h4>Your Score: <span id="user-main-score">0</span></h4>
+            </div>
+            <div>
+                <h4>Computer Score: <span id="computer-main-score">0</span></h4>
+            </div>
+        </div>
+        <div id="round-scores">
+            <h3>Round Score</h3>
+            <div>
+                <h4>Your Score: <span id="user-round-score">0</span></h4>
+            </div>
+            <div>
+                <h4>Computer Score: <span id="computer-round-score">0</span></h4>
+            </div>
+
+        </div>
+        <div id="game-area">
+        
+        </div>
+        </div>
+    </section>
     <script src="assets/scripts/script.js"></script>
   </body>
 </html>
