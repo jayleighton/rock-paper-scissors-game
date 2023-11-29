@@ -7,9 +7,12 @@
 body {
     font-family: 'Merienda', cursive;
     background-color: #191717;
+    display: flex;
+    flex-direction: column;
 }
 
-h1, h5 {
+h1,
+h5 {
     padding: 5px 0 5px 0;
 }
 
@@ -21,24 +24,38 @@ h1, h5 {
     background-color: #191717;
     color: #F1EFEF;
     text-align: center;
-
-
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
 }
 
 
 /* Score Section Styling */
-#main-scores h3, #round-scores h3, #game-area h3, #game-area h4{
-    text-align: center;
-   
+#game-container {
+    margin-top: 78px;
 }
 
-#main-scores, #round-scores, #game-area {
+
+#main-scores h3,
+#round-scores h3,
+#game-area h3,
+#game-area h4,
+#computer-choice h4 {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#main-scores,
+#round-scores,
+#game-area {
     border: 2px solid #191717;
     background-color: #F1EFEF;
     padding: 0 5px 0 5px;
     border-radius: 5px;
     margin: 1%;
-    
+
 }
 
 .score-container {
@@ -47,7 +64,7 @@ h1, h5 {
 }
 
 .score-layout {
-    width: 50%; 
+    width: 50%;
 }
 
 #controls {
@@ -56,59 +73,113 @@ h1, h5 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
-    
+    justify-content: space-around;
+}
+
+#computer-choice {
+    width: 85%;
+    margin: 10px auto;
+    text-align: center;
     
 }
 
 
- .btn {
+.btn {
     width: 200px;
     height: 50px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
- }
+    
+}
 
- .btn:focus {
-     outline: none;
- }
+.btn:focus {
+    outline: none;
+}
 
- .btn--big {
-     padding-top: 10px;
-     border-radius: 50%;
-     /* background-color: white; */
-     border: 6px solid;
-     width: 80px;
-     height: 80px;
-     font-size: 3.2rem;
-     margin: 0 15px;
-     transition: all 0.5s;
-     color: #191717;
- }
+.btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
+    /* background-color: white; */
+    border: 6px solid;
+    width: 80px;
+    height: 80px;
+    font-size: 3.2rem;
+    margin: 0 15px;
+    transition: all 0.5s;
+    color: #191717;
+}
 
- .btn-red {
+.btn--big::after {
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
+    position: relative;
+    /* left: -0.5em; */
+}
+
+.btn-red {
     border-color: red;
     color: red;
- }
+}
 
- .btn-blue {
+.btn-blue {
     border-color: blue;
     color: blue;
- }
+}
 
- .btn-green {
-     border-color: green;
-     color: green;
- }
+.btn-green {
+    border-color: green;
+    color: green;
+}
 
- .btn-purple {
-     border-color: purple;
-     color: purple;
- }
+.btn-purple {
+    border-color: purple;
+    color: purple;
+}
 
- .btn-orange {
-     border-color: orange;
-     color: orange;
- }
+.btn-orange {
+    border-color: orange;
+    color: orange;
+}
 
+.btn-slate-blue {
+    border-color: slateblue;
+    color: slateblue;
+}
+
+.btn-blue:active,
+.btn-blue:hover {
+    background-color: blue;
+    color: white;
+}
+
+.btn-red:active,
+.btn-red:hover {
+    background-color: red;
+    color: white;
+}
+
+.btn-green:active,
+.btn-green:hover {
+    background-color: green;
+    color: white;
+}
+
+.btn-purple:active,
+.btn-purple:hover {
+    background-color: purple;
+    color: white;
+}
+
+.btn-orange:active,
+.btn-orange:hover {
+    background-color: orange;
+    color: white;
+}
+
+.btn-slate-blue:active,
+.btn-slate-blue:hover {
+    background-color: slateblue;
+    color: white;
+}
