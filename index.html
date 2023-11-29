@@ -5,43 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/3ed75587e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <section id="header">
-        <div class="title-bar">
-            <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-        </div>
+      <div class="title-bar">
+        <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+      </div>
     </section>
     <section id="game-section">
-        <div id="game-container">
+      <div id="game-container">
         <div id="main-scores">
-            <h3>Game Score</h3>
-            <div>
-                <h4>Your Score: <span id="user-main-score">0</span></h4>
-            </div>
-            <div>
-                <h4>Computer Score: <span id="computer-main-score">0</span></h4>
-            </div>
+          <h3>Game Score</h3>
+          <div>
+            <h4>Your Score: <span id="user-main-score">0</span></h4>
+          </div>
+          <div>
+            <h4>Computer Score: <span id="computer-main-score">0</span></h4>
+          </div>
         </div>
         <div id="round-scores">
-            <h3>Round Score</h3>
-            <div>
-                <h4>Your Score: <span id="user-round-score">0</span></h4>
-            </div>
-            <div>
-                <h4>Computer Score: <span id="computer-round-score">0</span></h4>
-            </div>
-
+          <h3>Round Score</h3>
+          <div>
+            <h4>Your Score: <span id="user-round-score">0</span></h4>
+          </div>
+          <div>
+            <h4>Computer Score: <span id="computer-round-score">0</span></h4>
+          </div>
         </div>
         <div id="game-area">
+            <h3>Make your selection: </h3>
+            <div id="controls">
+                <button>
+                    <i class="far fa-hand-rock"></i>
+                </button>
+                <button>
+                    <i class="far fa-hand-paper"></i>
+                </button>
+                <button>
+                    <i class="far fa-hand-scissors"></i>
+                </button>
+                <button>
+                    <i class="far fa-hand-lizard"></i>
+                </button>
+                <button>
+                    <i class="far fa-hand-spock"></i>
+                </button>
+            </div>
+            <div id="computer-choice">
+                <h4>Computer Chose:</h4>
+                <button>
+                    <i class="far fa-hand-spock"></i>
+                </button>
+            </div>
+            <div id="feedback-area">
+                <h3 id="result-action">Result: You Win</h3>
+                <h2 id="result">You Win</h2>
+            </div>
+
+
+        </div>
         
-        </div>
-        </div>
+        
+        
+      </div>
     </section>
     <script src="assets/scripts/script.js"></script>
   </body>
