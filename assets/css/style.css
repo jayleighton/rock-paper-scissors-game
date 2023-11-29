@@ -50,5 +50,65 @@ h1, h5 {
     width: 50%; 
 }
 
+#controls {
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+    
+}
 
+
+ .btn {
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+ }
+
+ .btn:focus {
+     outline: none;
+ }
+
+ .btn--big {
+     padding-top: 10px;
+     border-radius: 50%;
+     /* background-color: white; */
+     border: 6px solid;
+     width: 80px;
+     height: 80px;
+     font-size: 3.2rem;
+     margin: 0 15px;
+     transition: all 0.5s;
+     color: #191717;
+ }
+
+ .btn-red {
+    border-color: red;
+    color: red;
+ }
+
+ .btn-blue {
+    border-color: blue;
+    color: blue;
+ }
+
+ .btn-green {
+     border-color: green;
+     color: green;
+ }
+
+ .btn-purple {
+     border-color: purple;
+     color: purple;
+ }
+
+ .btn-orange {
+     border-color: orange;
+     color: orange;
+ }
 
