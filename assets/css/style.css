@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Merienda', cursive;
+    background-color: #191717;
 }
 
 h1, h5 {
@@ -26,14 +27,17 @@ h1, h5 {
 
 
 /* Score Section Styling */
-#main-scores h3, #round-scores h3{
+#main-scores h3, #round-scores h3, #game-area h3, #game-area h4{
     text-align: center;
    
 }
 
-#main-scores, #round-scores {
-    border-bottom: 2px solid #191717;
+#main-scores, #round-scores, #game-area {
+    border: 2px solid #191717;
+    background-color: #F1EFEF;
     padding: 0 5px 0 5px;
+    border-radius: 5px;
+    margin: 1%;
     
 }
 
