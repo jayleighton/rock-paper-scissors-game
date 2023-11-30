@@ -9,7 +9,7 @@ body {
     background-color: #191717;
     display: flex;
     flex-direction: column;
-    background: url("../images/joel-filipe-QwoNAhbmLLo-unsplash.webp") no-repeat center /cover;
+    background: url("../images/johny-goerend-Oz2ZQ2j8We8-unsplash.webp") no-repeat center /cover;
     height: 100vh;
 }
 
@@ -31,7 +31,7 @@ h5 {
 }
 
 
-/* Score Section Styling */
+/* Score and game Section Styling */
 
 
 #main-scores h3,
@@ -47,16 +47,12 @@ h5 {
 #main-scores,
 #round-scores,
 #game-area {
-    /* border: 1px solid #F1EFEF; */
-    /* background-color: #F1EFEF; */
     background-color: rgba(60, 60, 60, 0.6);
     padding: 0 5px 0 5px;
     border-radius: 5px;
     margin: 1%;
     color: #F1EFEF;
     font-weight: bold;
-    
-
 }
 
 .score-container {
@@ -84,7 +80,7 @@ h5 {
     
 }
 
-
+/* Buttons */
 .btn {
     width: 150px;
     height: 50px;
@@ -101,7 +97,6 @@ h5 {
 .btn--big {
     padding-top: 5px;
     border-radius: 50%;
-    /* background-color: white; */
     border: 6px solid;
     width: 60px;
     height: 60px;
@@ -110,8 +105,6 @@ h5 {
     transition: all 0.5s;
     color: #191717;
 }
-
-
 
 .btn-red {
     border-color: red;
@@ -177,4 +170,71 @@ h5 {
 .btn-slate-blue:hover {
     background-color: slateblue;
     color: white;
+}
+
+/* Media query for table screen */
+@media screen and (min-width: 768px) {
+
+    h1, h3, h4 {
+        font-size: 2.1rem;
+        margin: 8px 0;
+    }
+
+    h5 {
+        font-size: 1.3rem;
+    }
+
+    #scores-main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .score-layout {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    #main-scores,
+    #round-scores {
+        width: 45%;
+        height: 220px;
+    }
+    .score-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #game-area {
+        width: 85%;
+        margin: auto auto;
+    }
+    
+    .btn--big::after {
+        content: attr(data-type);
+        font-size: 1rem;
+        color: #F1EFEF;
+        position: relative;
+        left: -0.5em;
+    }
+    
+    #computer-choice h4 {
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    #feedback-area {
+        margin-top: 40px;
+    }
+   
+}
+
+@media screen and (min-width: 1050px) {
+
+    body {
+            background-image: url("../images/john-fowler-7Ym9rpYtSdA-unsplash.webp");
+        }
+    
+    
 }
