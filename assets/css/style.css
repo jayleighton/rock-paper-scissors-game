@@ -219,7 +219,11 @@ h5 {
         font-size: 1rem;
         color: #F1EFEF;
         position: relative;
-        left: -0.5em;
+        left: -0.3em;
+    }
+
+    #result {
+        padding-bottom: 50px;
     }
 
     #computer-choice h4 {
@@ -231,13 +235,28 @@ h5 {
         margin-top: 40px;
     }
 
+    .btn--big {
+        padding-top: 15px;
+        border-radius: 50%;
+        border: 6px solid;
+        width: 100px;
+        height: 100px;
+        font-size: 3.2rem;
+        margin: 0 15px;
+        transition: all 0.5s;
+
+    }
+
 }
 
 @media screen and (min-width: 1050px) {
 
     body {
         background-image: url("../images/john-fowler-7Ym9rpYtSdA-unsplash.webp");
+        background-position: bottom;
     }
+
+    
 
 }
 
@@ -273,6 +292,12 @@ h5 {
     #game-area {
         margin: 5px;
     }
+
+    #controls {
+        justify-content: space-evenly;
+    }
+
+    
 
 
 
