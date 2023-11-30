@@ -9,6 +9,7 @@ body {
     background-color: #191717;
     display: flex;
     flex-direction: column;
+    background: url("../images/joel-filipe-QwoNAhbmLLo-unsplash.webp") center center/cover;
 }
 
 h1,
@@ -24,17 +25,11 @@ h5 {
     background-color: #191717;
     color: #F1EFEF;
     text-align: center;
-    position: fixed;
-    z-index: 99;
-    display: flex;
-    justify-content: center;
+    
 }
 
 
 /* Score Section Styling */
-#game-container {
-    margin-top: 78px;
-}
 
 
 #main-scores h3,
@@ -50,11 +45,15 @@ h5 {
 #main-scores,
 #round-scores,
 #game-area {
-    border: 2px solid #191717;
-    background-color: #F1EFEF;
+    border: 2px solid #F1EFEF;
+    /* background-color: #F1EFEF; */
+    background-color: rgba(60, 60, 60, 0.4);
     padding: 0 5px 0 5px;
     border-radius: 5px;
     margin: 1%;
+    color: #F1EFEF;
+    font-weight: bold;
+    
 
 }
 
@@ -68,7 +67,7 @@ h5 {
 }
 
 #controls {
-    width: 85%;
+    width: 100%;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +84,7 @@ h5 {
 
 
 .btn {
-    width: 200px;
+    width: 150px;
     height: 50px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -98,25 +97,19 @@ h5 {
 }
 
 .btn--big {
-    padding-top: 10px;
+    padding-top: 5px;
     border-radius: 50%;
     /* background-color: white; */
     border: 6px solid;
-    width: 80px;
-    height: 80px;
-    font-size: 3.2rem;
+    width: 60px;
+    height: 60px;
+    font-size: 2.2rem;
     margin: 0 15px;
     transition: all 0.5s;
     color: #191717;
 }
 
-.btn--big::after {
-    content: attr(data-type);
-    font-size: 1rem;
-    color: #445361;
-    position: relative;
-    /* left: -0.5em; */
-}
+
 
 .btn-red {
     border-color: red;
