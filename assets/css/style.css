@@ -9,7 +9,8 @@ body {
     background-color: #191717;
     display: flex;
     flex-direction: column;
-    background: url("../images/joel-filipe-QwoNAhbmLLo-unsplash.webp") center center/cover;
+    background: url("../images/joel-filipe-QwoNAhbmLLo-unsplash.webp") no-repeat center /cover;
+    height: 100vh;
 }
 
 h1,
