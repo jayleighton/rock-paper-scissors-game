@@ -16,6 +16,7 @@ body {
 h1,
 h5 {
     padding: 5px 0 5px 0;
+    text-align: center;
 }
 
 
@@ -46,9 +47,9 @@ h5 {
 #main-scores,
 #round-scores,
 #game-area {
-    border: 1px solid #F1EFEF;
+    /* border: 1px solid #F1EFEF; */
     /* background-color: #F1EFEF; */
-    background-color: rgba(60, 60, 60, 0.4);
+    background-color: rgba(60, 60, 60, 0.6);
     padding: 0 5px 0 5px;
     border-radius: 5px;
     margin: 1%;
