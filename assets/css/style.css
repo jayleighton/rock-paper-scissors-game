@@ -46,7 +46,7 @@ h5 {
 #main-scores,
 #round-scores,
 #game-area {
-    border: 2px solid #F1EFEF;
+    border: 1px solid #F1EFEF;
     /* background-color: #F1EFEF; */
     background-color: rgba(60, 60, 60, 0.4);
     padding: 0 5px 0 5px;
