@@ -21,15 +21,39 @@ h5 {
 
 
 /* header styling */
+.title-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.title-bar h1 {
+   margin: auto auto;
+}
+
 #header {
     width: 100%;
     font-size: 1rem;
     background-color: #191717;
     color: #F1EFEF;
     text-align: center;
-
+    
 }
 
+#help {
+    width: 10%;
+    color: white;
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: 6px solid #191717;
+    font-size: 2.2rem;
+    background-color: #191717;
+    padding-top: 6px;
+}
 
 /* Score and game Section Styling */
 
