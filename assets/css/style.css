@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     background: url("../images/johny-goerend-Oz2ZQ2j8We8-unsplash.webp") no-repeat center /cover;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 h1,
