@@ -102,6 +102,7 @@ h5 {
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 20px;
+    height: auto;
 }
 
 #computer-choice {
@@ -280,6 +281,11 @@ h5 {
     #game-area {
         width: 85%;
         margin: auto auto;
+    }
+
+    #controls {
+        height: auto;
+        padding-bottom: 50px;
     }
 
     .btn--big::after {
