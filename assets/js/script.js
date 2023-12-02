@@ -140,10 +140,6 @@ function checkWinner(userWeapon, computerWeapon) {
             return [winner, result];
         }
     }
-    
-
-
-
 }
 
 /**
@@ -176,12 +172,18 @@ function resultMessage(winningWeapon, losingWeapon) {
 
 }
 
+/**
+ * Updates the computer choice and feedback elements to be visible.
+ * Updates the computer choice icon
+ */
 function toggleChoiceAndFeedback(computerSelectedWeapon) {
 
+    // Check if the element is hidden and make it visible
     if (document.getElementById('computer-choice').classList.contains('hidden')) {
         document.getElementById('computer-choice').classList.remove('hidden');
     }
 
+    // Check if the element is hidden and make it visible
     if (document.getElementById('feedback-area').classList.contains('hidden')) {
         document.getElementById('feedback-area').classList.remove('hidden');
     }
@@ -190,11 +192,13 @@ function toggleChoiceAndFeedback(computerSelectedWeapon) {
     let newClasses = weaponsObj[computerSelectedWeapon];
     let currentClasses = document.getElementById('computer-button').classList;
     
+    // Loop through the element classList and remove all items
     while (currentClasses.length > 0) {
         let item = currentClasses[0];
         currentClasses.remove(item);
     }
 
+    // Loop throuhg the WeaponsObj array and add the required classes for the icon display
     for (let i=0; i < newClasses.length; i++){
         currentClasses.add(newClasses[i]);
     }
@@ -231,27 +235,28 @@ function updateScores(winnerData) {
         //Increment user round score
         let userRoundScore = parseInt(document.getElementById('user-round-score').innerText);
         userRoundScore += 1;
+        document.getElementById('user-round-score').innerText = userRoundScore;
         if (userRoundScore >= 3){
             //Game is over. Increment game score and set round back to 0
             updateGameScore('user')
             resetRoundScores();
         } else {
             // Increment the round score for the user
-            document.getElementById('user-round-score').innerText = userRoundScore;
-            updateRoundNumber()
+            updateRoundNumber();
         }
 
     } else {
         // Increment computer score
         let computerRoundScore = parseInt(document.getElementById('computer-round-score').innerText);
         computerRoundScore += 1;
+        document.getElementById('computer-round-score').innerText = computerRoundScore; 
         if (computerRoundScore >= 3) {
             //Game is over. Increment game score and set round back to 0
             updateGameScore('computer')
             resetRoundScores();
         } else {
             // Increment the round score for the computer player
-            document.getElementById('computer-round-score').innerText = computerRoundScore; 
+            updateRoundNumber();
         }
     }
 }
@@ -265,10 +270,12 @@ function updateGameScore(winnerToUpdate) {
         let gameScore = parseInt(document.getElementById('user-main-score').innerText);
         gameScore += 1;
         document.getElementById('user-main-score').innerText = gameScore;
+        alert('You have won the best out of 5 rounds. \n Starting a new game!');
     } else {
         let gameScore = parseInt(document.getElementById('computer-main-score').innerText);
-            gameScore += 1;
-            document.getElementById('computer-main-score').innerText = gameScore;
+        gameScore += 1;
+        document.getElementById('computer-main-score').innerText = gameScore;
+        alert('Your opponent has won the best out of 5 rounds. \n Starting a new game!');
     }
 }
 
@@ -282,17 +289,14 @@ function resetRoundScores() {
     document.getElementById('computer-round-score').innerText = 0;
 }
 
+/**
+ * Increments the round number by 1
+ */
 function updateRoundNumber() {
     let roundNum = parseInt(document.getElementById('round-num').innerText);
     roundNum += 1;
     document.getElementById('round-num').innerText = roundNum;
-    return roundNum;
+    
 }
 
 
-// for (let i=0; i<=20; i++){
-//     let random = Math.floor(Math.random() * 5);
-//     console.log(random);
-//     let weaponName = weapons[random];
-//     console.log(weaponsObj[weaponName]);
-// }
