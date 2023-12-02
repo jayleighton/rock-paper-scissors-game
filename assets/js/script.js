@@ -40,11 +40,12 @@ function startGame(userWeapon){
     // Compute the winner and get the message text
     let winner = checkWinner(userWeapon, computerWeapon);
     // Toggle the computer choice elements
-    toggleChoiceAndFeedback(computerWeapon);
+    setTimeout(() => {toggleChoiceAndFeedback(computerWeapon); }, 500);
     // Update the Winner and message on screen
     toggleWinnerMessage(winner);
     // Update the round scores
     updateScores(winner);
+    setTimeout(() => {clearResult();}, 2000);
 
 }
 
@@ -297,6 +298,13 @@ function updateRoundNumber() {
     roundNum += 1;
     document.getElementById('round-num').innerText = roundNum;
     
+}
+
+
+function clearResult() {
+    document.getElementById('result-action').innerText = '';
+    document.getElementById('result').innerText = '';
+
 }
 
 
