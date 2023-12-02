@@ -274,12 +274,18 @@ function updateGameScore(winnerToUpdate) {
         let gameScore = parseInt(document.getElementById('user-main-score').innerText);
         gameScore += 1;
         document.getElementById('user-main-score').innerText = gameScore;
-        alert('You have won the best out of 5 rounds. \n Starting a new game!');
+        // alert('You have won the best out of 5 rounds. \n Starting a new game!');
+        document.getElementById('game-winner').innerText = 'You have won the best out of 5 rounds. \n Starting a new game!'
+        document.getElementById('game-winner').classList.remove('hidden');
+        setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 3000 );
     } else {
         let gameScore = parseInt(document.getElementById('computer-main-score').innerText);
         gameScore += 1;
         document.getElementById('computer-main-score').innerText = gameScore;
-        alert('Your opponent has won the best out of 5 rounds. \n Starting a new game!');
+        // alert('Your opponent has won the best out of 5 rounds. \n Starting a new game!');
+        document.getElementById('game-winner').innerText = 'Your opponent has won the best out of 5 rounds. \n Starting a new game!'
+        document.getElementById('game-winner').classList.remove('hidden');
+        setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 3000 );
     }
 }
 
