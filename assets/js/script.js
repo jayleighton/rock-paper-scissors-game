@@ -37,7 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
 function startGame(userWeapon){
     // Set the computers weapon
     let computerWeapon = computerChoice();
-    checkWinner(userWeapon, computerWeapon);
+    // Compute the winner and get the message text
+    let winner = checkWinner(userWeapon, computerWeapon);
+    // Toggle the computer choice elements
+    
+    
+
 
 
 }
@@ -79,7 +84,11 @@ function computerChoice() {
  */
 function checkWinner(userWeapon, computerWeapon) {
     
-    if (userWeapon === 'rock') {
+    if (userWeapon === computerWeapon) {
+        let winner = 'draw';
+        let result = "The round is tied!";
+        return [winner, result];
+    } else if (userWeapon === 'rock') {
         if (computerWeapon === 'scissors' || computerWeapon === 'lizard'){
             let winner = 'user';
             let result = resultMessage(userWeapon, computerWeapon);
@@ -87,38 +96,47 @@ function checkWinner(userWeapon, computerWeapon) {
         } else{
             let winner = 'computer';
             let result = resultMessage(computerWeapon, userWeapon);
+            return [winner, result];
         }
     } else if (userWeapon === 'paper') {
         if (computerWeapon === 'rock' || computerWeapon == 'spock'){
             let winner = 'user';
             let result = resultMessage(userWeapon, computerWeapon);
+            return [winner, result];
         } else {
             let winner = 'computer';
             let result = resultMessage(computerWeapon, userWeapon);
+            return [winner, result];
         }
     }  else if (userWeapon === 'scissors') {
         if (computerWeapon === 'lizard' || computerWeapon === 'paper') {
             let winner = 'user';
             let result = resultMessage(userWeapon, computerWeapon);
+            return [winner, result];
         } else {
             let winner = 'computer';
             let result = resultMessage(computerWeapon, userWeapon);
+            return [winner, result];
         }
     } else if (userWeapon === 'lizard'){
         if (computerWeapon === 'spock' || computerWeapon === 'paper'){
             let winner = 'user';
             let result = resultMessage(userWeapon, computerWeapon);
+            return [winner, result];
         } else {
             let winner = 'computer';
             let result = resultMessage(computerWeapon, userWeapon);
+            return [winner, result];
         }
     } else if (userWeapon === 'spock'){
         if (computerWeapon === 'scissors' || computerWeapon === 'rock'){
             let winner = 'user';
             let result = resultMessage(userWeapon, computerWeapon);
+            return [winner, result];
         } else {
             let winner = 'computer';
             let result = resultMessage(computerWeapon, userWeapon);
+            return [winner, result];
         }
     }
     
@@ -127,8 +145,33 @@ function checkWinner(userWeapon, computerWeapon) {
 
 }
 
-
+/**
+ * Receives the winning and loosing weapons and returns the result
+ * 
+ */
 function resultMessage(winningWeapon, losingWeapon) {
+
+    if (winningWeapon === 'rock' && losingWeapon === 'scissors'){
+        return "Rock breaks Scissors";
+    } else if (winningWeapon === 'rock' && losingWeapon === 'lizard') {
+        return "Rock crushes Lizard";
+    } else if (winningWeapon === 'paper' && losingWeapon === 'rock') {
+        return "Paper covers Rock";
+    } else if (winningWeapon === 'paper' && losingWeapon === 'spock') {
+        return "Paper disproves Spock";
+    } else if (winningWeapon === 'scissors' && losingWeapon === 'paper') {
+        return "Scissors cuts Paper";
+    } else if (winningWeapon === 'scissors' && losingWeapon === 'lizard') {
+        return "Scissors decapitates Lizard";
+    } else if (winningWeapon === 'lizard' && losingWeapon === 'spock') {
+        return "Lizard poisons Spock";
+    } else if (winningWeapon === 'lizard' && losingWeapon === 'paper') {
+        return "Lizard eats Paper";
+    } else if (winningWeapon === 'spock' && losingWeapon === 'scissors') {
+        return "Spock melts Scissors";
+    } else if (winningWeapon === 'spock' && losingWeapon === 'rock') {
+        return "Spock vaporizes Rock";
+    }
 
 }
 
