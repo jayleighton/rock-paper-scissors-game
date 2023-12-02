@@ -85,6 +85,10 @@ h5 {
     font-weight: bold;
 }
 
+#feedback-area h3 {
+    padding-bottom: 15px;
+}
+
 .score-container {
     display: flex;
     flex-direction: row;
