@@ -15,17 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName('button');
     for (let button of buttons) {
         button.addEventListener('click', function () {
-            // Add event for the instructions button
-            if (this.getAttribute('data-type') === 'instructions'){
-                toggleInstructions();
-            } else if (this.getAttribute('data-type') === 'rock' || this.getAttribute('data-type') === 'paper' || this.getAttribute('data-type') === 'scissors' || this.getAttribute('data-type') === 'lizard' 
-            || this.getAttribute('data-type') === 'spock') {
-                // Set the users weapon
-                let userWeapon = this.getAttribute('data-type');
-                startGame(userWeapon);
-            } 
-            else {
-                console.log(this.getAttribute('data-type'));
+            if (this.getAttribute('data-from') != 'computer') {
+                // Add event for the instructions button
+                if (this.getAttribute('data-type') === 'instructions'){
+                    toggleInstructions();
+                } else if (this.getAttribute('data-type') === 'rock' || this.getAttribute('data-type') === 'paper' || this.getAttribute('data-type') === 'scissors' || this.getAttribute('data-type') === 'lizard' 
+                || this.getAttribute('data-type') === 'spock') {
+                    // Set the users weapon
+                    let userWeapon = this.getAttribute('data-type');
+                    startGame(userWeapon);
+                } 
+                else {
+                    console.log(this.getAttribute('data-type'));
+                }
+            } else {
+                console.log("Computer choice button clicked");
             }
         })
     }
