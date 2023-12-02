@@ -206,6 +206,10 @@ h5 {
     color: white;
 }
 
+#game-winner {
+    background-color: #191717;
+}
+
 /* Instructions Section*/
 #instructions {
     background-color:rgba(8, 8, 8, 0.9);
