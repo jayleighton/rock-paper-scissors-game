@@ -62,8 +62,6 @@ h5 {
 }
 
 /* Score and game Section Styling */
-
-
 #main-scores h3,
 #round-scores h3,
 #game-area h3,
@@ -208,7 +206,7 @@ h5 {
     color: white;
 }
 
-/* Instructions */
+/* Instructions Section*/
 #instructions {
     background-color:rgba(8, 8, 8, 0.9);
     color: white;
@@ -216,10 +214,7 @@ h5 {
     position: absolute;
     top: 100px;
     left: -10px;
-    /* height: auto; */
     margin: 15px 15px;
-    
-    
 }
 
 #instructions div {
@@ -247,7 +242,7 @@ h5 {
 
 /* Media query for table screen */
 @media screen and (min-width: 768px) {
-
+    /* General styling */
     h1,
     h3,
     h4 {
@@ -259,6 +254,7 @@ h5 {
         font-size: 1.3rem;
     }
 
+    /* Scores and game area container styling */
     #scores-main-container {
         display: flex;
         flex-direction: row;
@@ -292,13 +288,7 @@ h5 {
         padding-bottom: 50px;
     }
 
-    .btn--big::after {
-        content: attr(data-type);
-        font-size: 1rem;
-        color: #F1EFEF;
-        position: relative;
-        left: -0.3em;
-    }
+    
 
     #result {
         padding-bottom: 50px;
@@ -311,6 +301,15 @@ h5 {
 
     #feedback-area {
         margin-top: 40px;
+    }
+
+    /* Button styling */
+    .btn--big::after {
+        content: attr(data-type);
+        font-size: 1rem;
+        color: #F1EFEF;
+        position: relative;
+        left: -0.3em;
     }
 
     .btn--big {
@@ -339,6 +338,7 @@ h5 {
 
 @media screen and (min-width: 1050px) {
 
+    /* General styling */
     body {
         background-image: url("../images/john-fowler-7Ym9rpYtSdA-unsplash.webp");
         background-position: bottom;
@@ -346,7 +346,6 @@ h5 {
 
     /* Instruction section */
     #instructions {
-        /* font-size: 2.5rem; */
         width: 60%;
         left: 150px;
     }
@@ -373,6 +372,7 @@ h5 {
 
 @media screen and (min-width: 1200px) {
 
+    /* Game section styling */
     #game-section {
         margin-top: 150px;
     }
@@ -410,7 +410,6 @@ h5 {
 
     /* Instruction section */
     #instructions {
-        /* font-size: 2.5rem; */
         width: 50%;
         left: 150px;
     }
@@ -431,9 +430,4 @@ h5 {
     #instructions p {
         font-size: 1.4rem;
     }
-    
-
-
-
-
 }

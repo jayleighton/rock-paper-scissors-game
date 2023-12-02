@@ -1,3 +1,4 @@
+// Global constant definitions
 const weapons = ['rock','paper','scissors','lizard','spock'];
 const weaponsObj = {
     rock: ["far", "fa-hand-rock"],
@@ -8,7 +9,7 @@ const weaponsObj = {
 }
 
 
-// Wait for DOM to finish loading then create event listeners
+// Wait for DOM to finish loading then create event listeners for buttons
 document.addEventListener("DOMContentLoaded", function () {
 
     // Get all of the button elements
@@ -36,19 +37,20 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 /**
- * Starts the round by receiving the users choice. 
+ * Starts the round after receiving the users choice. 
 */
 function startGame(userWeapon){
     // Set the computers weapon
     let computerWeapon = computerChoice();
     // Compute the winner and get the message text
     let winner = checkWinner(userWeapon, computerWeapon);
-    // Toggle the computer choice elements
+    // Toggle the computer choice elements after a delay
     setTimeout(() => {toggleChoiceAndFeedback(computerWeapon); }, 500);
     // Update the Winner and message on screen
     toggleWinnerMessage(winner);
     // Update the round scores
     updateScores(winner);
+    // Clear the result elements after a delay
     setTimeout(() => {clearResult();}, 3000);
 
 }
@@ -75,7 +77,7 @@ function toggleInstructions() {
 }
 
 /**
- * Generates a random selection of a weapon and returns it to the calling function
+ * Generates a random selection of a weapon for the computer and returns it to the calling function
  */
 function computerChoice() {
     //Generate random number between 0 and 4
@@ -148,8 +150,7 @@ function checkWinner(userWeapon, computerWeapon) {
 }
 
 /**
- * Receives the winning and loosing weapons and returns the result
- * 
+ * Receives the winning and loosing weapons and returns the result message
  */
 function resultMessage(winningWeapon, losingWeapon) {
 
@@ -179,7 +180,7 @@ function resultMessage(winningWeapon, losingWeapon) {
 
 /**
  * Updates the computer choice and feedback elements to be visible.
- * Updates the computer choice icon
+ * Updates the computer choice icon and data-type attribute
  */
 function toggleChoiceAndFeedback(computerSelectedWeapon) {
 
@@ -193,8 +194,9 @@ function toggleChoiceAndFeedback(computerSelectedWeapon) {
         document.getElementById('feedback-area').classList.remove('hidden');
     }
 
-    
+    // Get the classes to be displayed
     let newClasses = weaponsObj[computerSelectedWeapon];
+    // Get the current class List
     let currentClasses = document.getElementById('computer-button').classList;
     
     // Loop through the element classList and remove all items
@@ -203,7 +205,7 @@ function toggleChoiceAndFeedback(computerSelectedWeapon) {
         currentClasses.remove(item);
     }
 
-    // Loop throuhg the WeaponsObj array and add the required classes for the icon display
+    // Loop through the WeaponsObj array and add the required classes for the icon display
     for (let i=0; i < newClasses.length; i++){
         currentClasses.add(newClasses[i]);
     }
@@ -216,7 +218,6 @@ function toggleChoiceAndFeedback(computerSelectedWeapon) {
 
 /**
  * Receives the winner and message as an array and updates the components on the screen
- *  
  */
 function toggleWinnerMessage(winnerData) {
     
@@ -239,7 +240,6 @@ function toggleWinnerMessage(winnerData) {
 
 /**
  * Received the winner and updates the round and game scores as required
- * 
  */
 function updateScores(winnerData) {
     if ( winnerData[0] === 'draw') {
@@ -276,7 +276,7 @@ function updateScores(winnerData) {
 }
 
 /**
- * Receives the winner when one opponent has reached a rounb score of 3.
+ * Receives the winner when one opponent has reached a round score of 3.
  * Increments the game score for the winner of the game.
  */
 function updateGameScore(winnerToUpdate) {
@@ -284,7 +284,6 @@ function updateGameScore(winnerToUpdate) {
         let gameScore = parseInt(document.getElementById('user-main-score').innerText);
         gameScore += 1;
         document.getElementById('user-main-score').innerText = gameScore;
-        // alert('You have won the best out of 5 rounds. \n Starting a new game!');
         document.getElementById('game-winner').innerText = 'You have won the best out of 5 rounds. \n Starting a new game!'
         document.getElementById('game-winner').classList.remove('hidden');
         setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 3000 );
@@ -292,7 +291,6 @@ function updateGameScore(winnerToUpdate) {
         let gameScore = parseInt(document.getElementById('computer-main-score').innerText);
         gameScore += 1;
         document.getElementById('computer-main-score').innerText = gameScore;
-        // alert('Your opponent has won the best out of 5 rounds. \n Starting a new game!');
         document.getElementById('game-winner').innerText = 'Your opponent has won the best out of 5 rounds. \n Starting a new game!'
         document.getElementById('game-winner').classList.remove('hidden');
         setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 3000 );
@@ -300,7 +298,7 @@ function updateGameScore(winnerToUpdate) {
 }
 
 /**
- * Resets the round scores and the count to zero
+ * Resets the round scores and the round count to zero
  */
 function resetRoundScores() {
 
@@ -319,7 +317,10 @@ function updateRoundNumber() {
     
 }
 
-
+/**
+ * Clears the winner text and the winning message from the screen
+ * Hides the computer choice button
+ */
 function clearResult() {
     document.getElementById('result-action').innerText = '';
     document.getElementById('result').innerText = '';
