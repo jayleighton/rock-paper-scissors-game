@@ -45,7 +45,7 @@ function startGame(userWeapon){
     toggleWinnerMessage(winner);
     // Update the round scores
     updateScores(winner);
-    setTimeout(() => {clearResult();}, 2000);
+    setTimeout(() => {clearResult();}, 3000);
 
 }
 
@@ -206,6 +206,7 @@ function toggleChoiceAndFeedback(computerSelectedWeapon) {
 
     // Update the data-type attribute
     document.getElementById('computer-selection-button').setAttribute('data-type', computerSelectedWeapon);
+    
 }
 
 
@@ -214,6 +215,7 @@ function toggleChoiceAndFeedback(computerSelectedWeapon) {
  *  
  */
 function toggleWinnerMessage(winnerData) {
+    
     //Update the winner text
     if (winnerData[0] === 'user'){
         document.getElementById('result-action').innerText = 'You Win!';
@@ -225,6 +227,10 @@ function toggleWinnerMessage(winnerData) {
     
     //Update the winning message
     document.getElementById('result').innerText = winnerData[1];
+
+    // Show the computer choice
+    document.getElementById('computer-choice').classList.remove('hidden');
+
 }
 
 /**
@@ -313,6 +319,7 @@ function updateRoundNumber() {
 function clearResult() {
     document.getElementById('result-action').innerText = '';
     document.getElementById('result').innerText = '';
+    document.getElementById('computer-choice').classList.add('hidden');
 
 }
 
