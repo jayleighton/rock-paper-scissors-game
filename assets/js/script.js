@@ -1,10 +1,10 @@
 const weapons = ['rock','paper','scissors','lizard','spock'];
 const weaponsObj = {
-    Rock: '<i class="far fa-hand-rock"></i>',
-    Paper: '<i class="far fa-hand-paper"></i>',
-    Scissors: '<i class="far fa-hand-scissors"></i>',
-    Lizard: '<i class="far fa-hand-lizard"></i>',
-    Spock: '<i class="far fa-hand-spock"></i>',
+    rock: ["far", "fa-hand-rock"],
+    paper: ["far", "fa-hand-paper"],
+    scissors: ["far", "fa-hand-scissors"],
+    lizard: ["far", "fa-hand-lizard"],
+    spock: ["far", "fa-hand-spock"],
 }
 
 
@@ -40,7 +40,7 @@ function startGame(userWeapon){
     // Compute the winner and get the message text
     let winner = checkWinner(userWeapon, computerWeapon);
     // Toggle the computer choice elements
-    
+    toggleChoiceAndFeedback(computerWeapon);
     
 
 
@@ -173,6 +173,30 @@ function resultMessage(winningWeapon, losingWeapon) {
         return "Spock vaporizes Rock";
     }
 
+}
+
+function toggleChoiceAndFeedback(computerSelectedWeapon) {
+
+    if (document.getElementById('computer-choice').classList.contains('hidden')) {
+        document.getElementById('computer-choice').classList.remove('hidden');
+    }
+
+    if (document.getElementById('feedback-area').classList.contains('hidden')) {
+        document.getElementById('feedback-area').classList.remove('hidden');
+    }
+
+    
+    let newClasses = weaponsObj[computerSelectedWeapon];
+    let currentClasses = document.getElementById('computer-button').classList;
+    
+    while (currentClasses.length > 0) {
+        let item = currentClasses[0];
+        currentClasses.remove(item);
+    }
+
+    for (let i=0; i < newClasses.length; i++){
+        currentClasses.add(newClasses[i]);
+    }
 }
 
 
