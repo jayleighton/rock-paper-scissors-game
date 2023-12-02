@@ -203,6 +203,9 @@ function toggleChoiceAndFeedback(computerSelectedWeapon) {
     for (let i=0; i < newClasses.length; i++){
         currentClasses.add(newClasses[i]);
     }
+
+    // Update the data-type attribute
+    document.getElementById('computer-selection-button').setAttribute('data-type', computerSelectedWeapon);
 }
 
 
