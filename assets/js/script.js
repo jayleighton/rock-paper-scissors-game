@@ -51,7 +51,7 @@ function startGame(userWeapon){
     // Update the round scores
     updateScores(winner);
     // Clear the result elements after a delay
-    setTimeout(() => {clearResult();}, 3000);
+    setTimeout(() => {clearResult();}, 2000);
 
 }
 
@@ -322,10 +322,18 @@ function updateRoundNumber() {
  * Hides the computer choice button
  */
 function clearResult() {
+    //Clear text elements
     document.getElementById('result-action').innerText = '';
     document.getElementById('result').innerText = '';
     document.getElementById('computer-choice').classList.add('hidden');
 
+    // Clear the computer choice button classes
+    let computerButtonClasses = document.getElementById('computer-button').classList;
+    while (computerButtonClasses.length > 0) {
+        computerButtonClasses.remove(computerButtonClasses[0]);
+    }
+    // Clear the data type attribute for the computer choice
+    document.getElementById('computer-selection-button').setAttribute('data-type','');
 }
 
 
