@@ -20,15 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Add event for the instructions button
                 if (this.getAttribute('data-type') === 'instructions'){
                     toggleInstructions();
-                } else if (this.getAttribute('data-type') === 'rock' || this.getAttribute('data-type') === 'paper' || this.getAttribute('data-type') === 'scissors' || this.getAttribute('data-type') === 'lizard' 
-                || this.getAttribute('data-type') === 'spock') {
+                } else {
                     // Set the users weapon
                     let userWeapon = this.getAttribute('data-type');
                     startGame(userWeapon);
                 } 
-                else {
-                    console.log(this.getAttribute('data-type'));
-                }
             } else {
                 console.log("Computer choice button clicked");
             }
@@ -40,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
  * Starts the round after receiving the users choice. 
 */
 function startGame(userWeapon){
+    // Disable user buttons until result is shown
+    toggleUserButtons('off');
     // Set the computers weapon
     let computerWeapon = computerChoice();
     // Compute the winner and get the message text
@@ -54,6 +52,22 @@ function startGame(userWeapon){
     setTimeout(() => {clearResult();}, 2000);
 
 }
+
+
+function toggleUserButtons(toggleState){
+    let buttons = document.getElementsByTagName('button');
+    for (let button of buttons) {
+        if (button.getAttribute('data-from') === 'user' && button.getAttribute('data-type') !== 'instructions') {
+            if (toggleState === 'off') {
+                button.disabled = true;
+            } else {
+                button.disabled = false;
+            }
+        }
+    }
+    
+}
+
 
 /**
  * Get the classes for the instructions sections and toggles the visibility
@@ -334,6 +348,9 @@ function clearResult() {
     }
     // Clear the data type attribute for the computer choice
     document.getElementById('computer-selection-button').setAttribute('data-type','');
+
+    //Enable user buttons
+    toggleUserButtons('on');
 }
 
 
