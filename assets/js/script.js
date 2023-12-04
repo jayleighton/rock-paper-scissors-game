@@ -6,7 +6,7 @@ const weaponsObj = {
     scissors: ["far", "fa-hand-scissors"],
     lizard: ["far", "fa-hand-lizard"],
     spock: ["far", "fa-hand-spock"],
-}
+};
 
 
 // Wait for DOM to finish loading then create event listeners for buttons
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName('button');
     for (let button of buttons) {
         button.addEventListener('click', function () {
-            if (this.getAttribute('data-from') != 'computer') {
+            if (this.getAttribute('data-from') !== 'computer') {
                 // Add event for the instructions button
                 if (this.getAttribute('data-type') === 'instructions'){
                     toggleInstructions();
@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 console.log("Computer choice button clicked");
             }
-        })
+        });
     }
-})
+});
 
 /**
  * Starts the round after receiving the users choice. 
@@ -53,14 +53,19 @@ function startGame(userWeapon){
 
 }
 
-
+/**
+ * Toggles the disabled property of the user buttons based on the toggleState parameter
+ * A valud of 'off' will disable the buttons and any other value will enable the buttons
+ */
 function toggleUserButtons(toggleState){
     let buttons = document.getElementsByTagName('button');
     for (let button of buttons) {
         if (button.getAttribute('data-from') === 'user' && button.getAttribute('data-type') !== 'instructions') {
             if (toggleState === 'off') {
+                // disable button
                 button.disabled = true;
             } else {
+                //enable button
                 button.disabled = false;
             }
         }
@@ -102,7 +107,8 @@ function computerChoice() {
 
 /**
  * Receives the users selected weapon and the computers randomly selected weapon and computes the winner.
- * The display is toggled and the winner is returned to the calling function
+ * Calls the function to get the winning message based on the winning and losing weapon combination
+ * The winner and the winning message are returned as an array
  */
 function checkWinner(userWeapon, computerWeapon) {
     
@@ -239,7 +245,7 @@ function toggleWinnerMessage(winnerData) {
     if (winnerData[0] === 'user'){
         document.getElementById('result-action').innerText = 'You Win!';
     } else if (winnerData[0] === 'draw') {
-        document.getElementById('result-action').innerText = 'Draw!'
+        document.getElementById('result-action').innerText = 'Draw!';
     } else {
         document.getElementById('result-action').innerText = 'You Lose!';
     }
@@ -266,7 +272,7 @@ function updateScores(winnerData) {
         document.getElementById('user-round-score').innerText = userRoundScore;
         if (userRoundScore >= 3){
             //Game is over. Increment game score and set round back to 0
-            updateGameScore('user')
+            updateGameScore('user');
             resetRoundScores();
         } else {
             // Increment the round score for the user
@@ -280,7 +286,7 @@ function updateScores(winnerData) {
         document.getElementById('computer-round-score').innerText = computerRoundScore; 
         if (computerRoundScore >= 3) {
             //Game is over. Increment game score and set round back to 0
-            updateGameScore('computer')
+            updateGameScore('computer');
             resetRoundScores();
         } else {
             // Increment the round score for the computer player
@@ -298,14 +304,14 @@ function updateGameScore(winnerToUpdate) {
         let gameScore = parseInt(document.getElementById('user-main-score').innerText);
         gameScore += 1;
         document.getElementById('user-main-score').innerText = gameScore;
-        document.getElementById('game-winner').innerText = 'You have won the best out of 5 rounds. \n Starting a new game!'
+        document.getElementById('game-winner').innerText = 'You have won the best out of 5 rounds. \n Starting a new game!';
         document.getElementById('game-winner').classList.remove('hidden');
         setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 3000 );
     } else {
         let gameScore = parseInt(document.getElementById('computer-main-score').innerText);
         gameScore += 1;
         document.getElementById('computer-main-score').innerText = gameScore;
-        document.getElementById('game-winner').innerText = 'Your opponent has won the best out of 5 rounds. \n Starting a new game!'
+        document.getElementById('game-winner').innerText = 'Your opponent has won the best out of 5 rounds. \n Starting a new game!';
         document.getElementById('game-winner').classList.remove('hidden');
         setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 3000 );
     }
