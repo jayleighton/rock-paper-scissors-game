@@ -1,39 +1,121 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors, Lizard, Spock Game
+The rock, paper, scissors, lizard, spock game is intended to be a fun, simple game for players of all ages to enjoy.
 
-Welcome,
+![Website on a range of devices](documentation\testing\rpsls_responsiveness.png)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View the project website on Github Pages](https://jayleighton.github.io/rock-paper-scissors-game/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Contents
 
 ---
 
-Happy coding!
+## User Experience (UX)
+
+### User Stories
+
+#### First Time Visitor Goals
+- To immediately understand the purpose of the website
+- To immediately be able to start a game with no unnecessary steps
+- The ability to easily access the rules of the game for new players
+- To have a common experience regardless of viewport size
+
+
+#### Returning Visitor Goals
+- To have a common fun experience with the game
+
+
+## Design
+
+### Colour Palette
+
+
+### Imagery
+
+
+### Wireframes
+
+
+
+### Typography
+
+
+## Features
+
+### General Features
+
+## Technology Stack Used
+
+
+### Languages Used
+
+### Frameworks, Libraries & Programs Used
+
+ ## Deployment & Local Development
+
+### Github Pages Deployment
+
+Github Pages was used to deploy the live website. The instructions follow below:
+
+1. Log in to Github
+2. Find the repository for the project
+3. Click on the Settings link
+4. Select Pages from the tree menu
+5. Under the source option, select Deploy from a branch
+6. In the Branch section, select the relevant branch
+7. Click Save
+8. The URL for the live site is displayed at the top of the pages section
+
+### Local Development
+
+#### How to fork the repository
+
+To fork the Rock, Paper, Scissors, Lizard, Spock Repository:
+
+1. Log in to Github
+2. Go to the repository for this website, [jayleighton/rock-paper-scissors-game](https://github.com/jayleighton/rock-paper-scissors-game)
+3. Select Fork at the top of the screen
+
+#### How to clone the repository
+
+To Clone the Rock, Paper, Scissors, Lizard, Spock repository:
+
+1. Log in to Github
+2. Got to the repository for this website, [jayleighton/rock-paper-scissors-game](https://github.com/jayleighton/rock-paper-scissors-game)
+3. Click on the Code button at the top right of the screen and select HTTPS, SSH, or GitHub CLI
+4. Copy the link
+5. Open the terminal on your code editor in the directory where the project needs to be cloned
+6. Enter 'git clone' into the terminal and paste the Github link
+7. Press enter to clone the repository
+
+## Testing
+
+
+### W3C Validator
+
+
+### Resolved Bugs
+
+
+### Known Bugs
+
+###  Performance and Accessibility Testing
+
+## Credits
+
+### Code Credits
+
+
+### Content
+
+
+### Media
+
+
+## Acknowledgements
+
+
+
+
+
+
+
