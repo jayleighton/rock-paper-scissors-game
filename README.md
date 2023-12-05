@@ -113,10 +113,23 @@ To Clone the Rock, Paper, Scissors, Lizard, Spock repository:
 7. Press enter to clone the repository
 
 ## Testing
+- Testing has been completed throughout the development process to ensure that all expected functionality and interactivity is working correctly before moving on to the next section of the website.
 
+- Validation of the HTML code has also been completed successfully.
+
+- CSS Validation has been completed at the end of the building process.
+
+- JavaScript validation has been completed.
 
 ### W3C Validator
+The W3C validator was used to validate the HTML.
+- [Validation Result](documentation/testing/html_validation.png)
 
+The W3C jigsaw validator was used to validate the css in the styles.css file.
+- [CSS Validation Result](documentation/testing/css_validation.png)
+
+JavaScript validation was completed using JSHint.
+- [JavaScript Validation Result]()
 
 ### Resolved Bugs
 
@@ -133,8 +146,12 @@ To Clone the Rock, Paper, Scissors, Lizard, Spock repository:
 ### Content
 
 
-### Media
 
+### Media
+- Image for mobile background by <a href="https://unsplash.com/@johnygoerend?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Johny Goerend</a> on <a href="https://unsplash.com/photos/galaxy-wallpaper-Oz2ZQ2j8We8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- Image for desktop screens by <a href="https://unsplash.com/@wildhoney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">John Fowler</a> on <a href="https://unsplash.com/photos/brown-mountain-under-starry-sky-7Ym9rpYtSdA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+- [Image used to create Favicon ](https://p7.hiclipart.com/preview/1007/647/581/rock-paper-scissors-rock-paper-scissors-lizard-spock-sheldon-cooper-rockpaperscissorslizardspock-thumbnail.jpg)
 
 ## Acknowledgements
 
