@@ -36,24 +36,46 @@ The background image for mobile screens offers a nigh sky theme and is very ligh
 
 ### Wireframes
 Wireframes were created for mobile and desktop displays
-- [Wireframe export](documentation/WireFrames.pdf)
+- [Wireframe export](documentation/wireframs_mobile_desktop.pdf)
 
 
 ### Typography
+Google Fonts was used to provide the following font family for the project:
+- Marienda
 
+I chose this font because it is a modern fun font, although it is a cursive font, it still makes for easy reading.
 
 ## Features
 
 ### General Features
 
+The website consists of a single page which allows a user to start playing the game immediately.
+Some timeout intervals have been set on the round result and game feedback to improve the user experience.
+- ![Round result feedback](documentation/screen-shots/round-feedback-screenshot.png)
+- ![Game result feedback](documentation/screen-shots/game-feedback-screenshot.png)
+
 ## Technology Stack Used
 
 
 ### Languages Used
+The following languages were used to create this project:
+
+- HTML
+- CSS
+- JavaScript
 
 ### Frameworks, Libraries & Programs Used
+- Git for version control
+- Github - Used to store and save the files for the website
+- [Balsamiq](https://balsamiq.com/) - For creating Wireframes
+- [Code Anywhere](https://app.codeanywhere.com/) - Used as a remote development environment
+- [Google Fonts](https://fonts.google.com/) - Used to import the selected fonts
+- [Font Awesome](https://fontawesome.com/) - Used for the icons on the website
+- [Real Favicon Generator](https://realfavicongenerator.net) - Used for the creation Favicon on the website
+- Google Dev Tools - Used for troubleshooting HTML and CSS
+- [Am I Responsive](https://ui.dev/amiresponsive) - To test the responsivity of the website
 
- ## Deployment & Local Development
+## Deployment & Local Development
 
 ### Github Pages Deployment
 
