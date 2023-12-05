@@ -27,13 +27,16 @@ The rock, paper, scissors, lizard, spock game is intended to be a fun, simple ga
 ## Design
 
 ### Colour Palette
-
+![Project Colour Palette](documentation/colour_palette.png)
 
 ### Imagery
+The imagery on the site is intended to provide an evening sky or outer space feeling because the specific game with the introduction of Lizard and Spock was made famous by a sitcom entitled The  [Big Bang Theory](https://www.youtube.com/watch?v=pIpmITBocfM)
 
+The background image for mobile screens offers a nigh sky theme and is very lightweight on bandwidth, while the larger screens will show an image of the evening sky with a much higher resolution.
 
 ### Wireframes
-
+Wireframes were created for mobile and desktop displays
+- [Wireframe export](documentation/WireFrames.pdf)
 
 
 ### Typography
