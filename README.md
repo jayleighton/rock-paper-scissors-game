@@ -23,7 +23,6 @@ The rock, paper, scissors, lizard, spock game is intended to be a fun, simple ga
 #### Returning Visitor Goals
 - To have a common fun experience with the game
 
-
 ## Design
 
 ### Colour Palette
@@ -116,11 +115,15 @@ To Clone the Rock, Paper, Scissors, Lizard, Spock repository:
 ## Testing
 - Testing has been completed throughout the development process to ensure that all expected functionality and interactivity is working correctly before moving on to the next section of the website.
 
+### Testing Tools
+
 - Validation of the HTML code has also been completed successfully.
 
 - CSS Validation has been completed at the end of the building process.
 
 - JavaScript validation has been completed.
+
+- Button functionality has been tested and is working as expected
 
 ### W3C Validator
 The W3C validator was used to validate the HTML.
@@ -134,10 +137,28 @@ The W3C jigsaw validator was used to validate the css in the styles.css file.
 JavaScript validation was completed using JSHint.
 [JavaScript Validation Result]()
 
-### Resolved Bugs
+### Manual Testing
+- Table of manual test results
 
+![Manual testing results](documentation/testing/manual-element-testing.png)
+
+### Resolved Bugs
+- Instructions element causing overflow on body element. 
+    - Set the element to a fixed height and add scrolling on overflow.
+- Clicking the computer choice button triggered the game to start as a user selection.
+    - Added data-from attribute to the buttons to identify user and computer buttons for event listeners
+- Feedback was too fast after making a selection leaving the user unsure if something happened.
+    - Added time delays to the display of the computer choice and the result
+- Clicking on the user buttons before the time interval passed to display components caused issues with the flow of the game
+    - Added code to disable the user buttons until the result is displayed
+- Unable to scroll to the result when testing with a wide, but short display
+    - Correct overflow setting against the body selector causing the overflow to be hidden
+- The element showing the result of the game was not noticeable at the bottom of the screen
+    - Add the element to the top of the game area
 
 ### Known Bugs
+
+- There are no known bugs in the current project
 
 ###  Performance and Accessibility Testing
 Performance and accessibility testing has been completed using LightHouse for both mobile and desktop displays.
