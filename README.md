@@ -35,7 +35,7 @@ The background image for mobile screens offers a nigh sky theme and is very ligh
 
 ### Wireframes
 Wireframes were created for mobile and desktop displays
-- ![Wireframe export](documentation/wireframs_mobile_desktop.pdf)
+- [Wireframe export](documentation/wireframs_mobile_desktop.pdf)
 
 
 ### Typography
