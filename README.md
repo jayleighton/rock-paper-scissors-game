@@ -56,7 +56,6 @@ Some timeout intervals have been set on the round result and game feedback to im
 
 ## Technology Stack Used
 
-
 ### Languages Used
 The following languages were used to create this project:
 
@@ -174,10 +173,16 @@ Performance and accessibility testing has been completed using LightHouse for bo
 ## Credits
 
 ### Code Credits
+- Code Institute
+    - The button design was adapted from the Code Institute Love Maths project
 
+- Sitepoint.com
+    - The setTimeout function to delay sections of script processing was adapted from [sitepoint](https://www.sitepoint.com/javascript-settimeout-function-examples/)
 
 ### Content
 
+Content for the instructions section was obtained from the World Rock Paper Scissors Association website
+[WRPSA Website](https://wrpsa.com/a-beginners-guide-to-understanding-rock-paper-scissors-lizard-spock/)
 
 
 ### Media
@@ -186,7 +191,7 @@ Performance and accessibility testing has been completed using LightHouse for bo
 
 - [Image used to create Favicon ](https://p7.hiclipart.com/preview/1007/647/581/rock-paper-scissors-rock-paper-scissors-lizard-spock-sheldon-cooper-rockpaperscissorslizardspock-thumbnail.jpg)
 
-## Acknowledgements
+
 
 
 
