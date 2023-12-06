@@ -44,17 +44,21 @@
     ></script>
   </head>
   <body>
+    <!-- Header section -->
     <section id="header">
       <div class="title-bar">
         <h1>Rock, Paper, Scissors, Lizard, Spock </h1>
+        <!-- Toggle button for instructions -->
         <button data-type="instructions" id="help" title="help">
             <i class="fas fa-question-circle fa-spin"></i>
         </button>
       </div>
     </section>
+    <!-- Game Section -->
     <section id="game-section">
       <div id="game-container">
         <div id="scores-main-container">
+          <!-- Main Scores area -->
           <div id="main-scores">
             <h3>Game Score</h3>
             <div class="score-container">
@@ -66,6 +70,7 @@
               </div>
             </div>
           </div>
+          <!-- Round Scores area -->
           <div id="round-scores">
             <h3>Round Score</h3>
             <div class="score-container">
@@ -81,11 +86,15 @@
           </div>
         </div>
 
+        <!-- Game area -->
         <div id="game-area">
+          <!-- Game winner component -->
           <h2 class='hidden' id="game-winner">Undefined</h2>
           <h3>Round: <span id="round-num">0</span></h3>
           <h4>Choose your weapon:</h4>
+          <!-- Controls area -->
           <div id="controls">
+            <!-- User buttons -->
             <button data-type="rock" data-from="user" class="btn btn--big btn-red" title="Rock">
               <i class="far fa-hand-rock fa-spin"></i>
             </button>
@@ -122,12 +131,15 @@
               <i class="far fa-hand-spock fa-spin"></i>
             </button>
           </div>
+          <!-- Computer choice area -->
           <div id="computer-choice" class="hidden">
             <h4>Computer Chose:</h4>
+            <!-- Button to display computers choice -->
             <button id="computer-selection-button" data-type="spock" data-from="computer" class="btn btn--big btn-slate-blue">
               <i id="computer-button" class=""></i>
             </button>
           </div>
+          <!-- Feedback area -->
           <div id="feedback-area" class="hidden">
             <h5 id="result-action">Result Action</h5>
             <h3 id="result">Result Message</h3>
@@ -136,6 +148,7 @@
         </div>
       </div>
     </section>
+    <!-- Instructions area - toggled by the instructions button -->
     <section id="instructions" class="hidden"> 
         <div>
             <h2>Instructions</h2>
@@ -165,6 +178,7 @@
         </div>
     
     </section>
+    <!-- Scripts -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
