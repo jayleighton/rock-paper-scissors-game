@@ -129,7 +129,7 @@ The W3C validator was used to validate the HTML.
 
 ![Validation Result](documentation/testing/html_validation.png)
 
-The W3C jigsaw validator was used to validate the css in the styles.css file.
+The W3C jigsaw validator was used to validate the CSS in the styles.css file.
 
 ![CSS Validation Result](documentation/testing/css_validation.png)
 
@@ -160,7 +160,7 @@ JavaScript validation was completed using JSHint.
 - There are no known bugs in the current project
 
 ###  Performance and Accessibility Testing
-Performance and accessibility testing has been completed using LightHouse for both mobile and desktop displays.
+Performance and accessibility testing has been completed using Lighthouse for both mobile and desktop displays.
 
 - Mobile result
 
