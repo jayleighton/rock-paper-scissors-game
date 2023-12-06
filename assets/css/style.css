@@ -79,7 +79,7 @@ h5 {
     background-color: rgba(125,124,124,0.6);
     padding: 0 5px 0 5px;
     border-radius: 5px;
-    margin: 1%;
+    margin-bottom: 5px;
     color: #F1EFEF;
     font-weight: bold;
 }
@@ -113,6 +113,10 @@ h5 {
     margin: 5px auto;
     text-align: center;
 
+}
+
+#scores-main-container {
+    margin-top: 5px;
 }
 
 /* Buttons */
@@ -372,7 +376,15 @@ h5 {
     #instructions p {
         font-size: 1.2rem;
     }
+
+    #main-scores, #round-scores {
+        margin-right: 5px;
+    }
     
+    #game-area {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
 }
 
@@ -407,7 +419,7 @@ h5 {
     }
 
     #game-area {
-        margin: 5px;
+        /* margin: 5px; */
     }
 
     #controls {
