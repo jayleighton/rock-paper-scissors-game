@@ -306,14 +306,14 @@ function updateGameScore(winnerToUpdate) {
         document.getElementById('user-main-score').innerText = gameScore;
         document.getElementById('game-winner').innerText = 'Game Over. You won!';
         document.getElementById('game-winner').classList.remove('hidden');
-        setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 3000 );
+        setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 2000 );
     } else {
         let gameScore = parseInt(document.getElementById('computer-main-score').innerText);
         gameScore += 1;
         document.getElementById('computer-main-score').innerText = gameScore;
         document.getElementById('game-winner').innerText = 'Game Over. You Lost!';
         document.getElementById('game-winner').classList.remove('hidden');
-        setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 3000 );
+        setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 2000 );
     }
 }
 

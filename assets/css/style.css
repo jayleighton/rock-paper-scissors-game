@@ -377,14 +377,12 @@ h5 {
         font-size: 1.2rem;
     }
 
-    #main-scores, #round-scores {
-        margin-right: 5px;
+    #game-winner {
+        font-size: 1.8rem;
+        letter-spacing: 1.5;
     }
-    
-    #game-area {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
+
+   
 
 }
 
@@ -409,17 +407,26 @@ h5 {
     #main-scores {
         width: 50%;
         height: auto;
+        margin-right: 5px;
     }
 
     #round-scores {
         width: 50%;
         height: auto;
-        order: 9;
+        margin-right: 5px;
+        
 
     }
 
     #game-area {
-        /* margin: 5px; */
+        margin: 5px 0;
+        
+    }
+
+    #game-winner {
+        font-size: 3.2rem;
+        letter-spacing: 1.2;
+        
     }
 
     #controls {
