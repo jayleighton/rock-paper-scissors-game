@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     background: url("../images/johny-goerend-Oz2ZQ2j8We8-unsplash.webp") no-repeat center /cover;
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 h1,
@@ -224,7 +224,7 @@ h5 {
 #instructions div {
     padding: 0 10px 30px 20px;
     font-size: 1rem;
-    max-height: 500px;
+    max-height: 70vh;
     overflow-y: scroll;
 }
 
@@ -334,7 +334,7 @@ h5 {
     }
 
     #instructions div {
-        max-height: 500px;
+        max-height: 70vh;
     }
 }
 
@@ -362,7 +362,7 @@ h5 {
     #instructions div {
         padding: 0 10px 30px 20px;
         font-size: 1.6rem;
-        max-height: 700px;
+        max-height: 70vh;
     }
 
     #instructions p {
@@ -434,7 +434,7 @@ h5 {
     #instructions div {
         padding: 0 10px 30px 20px;
         font-size: 1.8rem;
-        max-height: 900px;
+        max-height: 80vh;
     }
 
     #instructions p {
