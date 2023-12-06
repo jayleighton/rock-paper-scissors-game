@@ -18,7 +18,7 @@ The rock, paper, scissors, lizard, spock game is intended to be a fun, simple ga
     - [Typography](#typography)
 - [Features](#features)
     - [General Features](#general-features)
-    - [Accessibility]
+    - [Accessibility](#accessibility)
 - [Technology Stack Used](#technology-stack-used)
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries, & Programs Used](#frameworks-libraries--programs-used)
@@ -90,7 +90,7 @@ As a result of user feedbacl, some timeout intervals have been set on the round 
 Great care has been taken during the design of the game to ensure that it is as accessible as possible.
 Accessbility testing has also been completed. 
 Refer to the [Performance and Accessibility Testing Section](#performance-and-accessibility-testing) for more information.
-  
+
 The following has been included in the website with this in mind:
 
 - Use of semantic HTML
@@ -115,6 +115,7 @@ The following languages were used to create this project:
 - [Real Favicon Generator](https://realfavicongenerator.net) - Used for the creation Favicon on the website
 - Google Dev Tools - Used for troubleshooting HTML and CSS
 - [Am I Responsive](https://ui.dev/amiresponsive) - To test the responsivity of the website
+- [VSCode](https://code.visualstudio.com/) for local development and testing
 
 ## Deployment & Local Development
 
