@@ -1,7 +1,7 @@
 # Rock, Paper, Scissors, Lizard, Spock Game
 The rock, paper, scissors, lizard, spock game is intended to be a fun, simple game for players of all ages to enjoy.
 
-![Website on a range of devices](documentation\testing\rpsls_responsiveness.png)
+![Website on a range of devices](documentation/testing/rpsls_responsiveness.png)
 
 [View the project website on Github Pages](https://jayleighton.github.io/rock-paper-scissors-game/)
 
