@@ -233,7 +233,7 @@ Content for the instructions section was obtained from the World Rock Paper Scis
 - Image for mobile background by <a href="https://unsplash.com/@johnygoerend?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Johny Goerend</a> on <a href="https://unsplash.com/photos/galaxy-wallpaper-Oz2ZQ2j8We8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 - Image for desktop screens by <a href="https://unsplash.com/@wildhoney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">John Fowler</a> on <a href="https://unsplash.com/photos/brown-mountain-under-starry-sky-7Ym9rpYtSdA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-- [Image used to create Favicon ](https://p7.hiclipart.com/preview/1007/647/581/rock-paper-scissors-rock-paper-scissors-lizard-spock-sheldon-cooper-rockpaperscissorslizardspock-thumbnail.jpg)
+- Image used to create [Favicon](https://p7.hiclipart.com/preview/1007/647/581/rock-paper-scissors-rock-paper-scissors-lizard-spock-sheldon-cooper-rockpaperscissorslizardspock-thumbnail.jpg)
 
 
 
