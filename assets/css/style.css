@@ -11,7 +11,6 @@ body {
     flex-direction: column;
     background: url("../images/johny-goerend-Oz2ZQ2j8We8-unsplash.webp") no-repeat center /cover;
     min-height: 100vh;
-    /* overflow: hidden; */
 }
 
 h1,
@@ -291,8 +290,6 @@ h5 {
         height: auto;
         padding-bottom: 50px;
     }
-
-    
 
     #result {
         padding-bottom: 50px;
