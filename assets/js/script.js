@@ -1,14 +1,3 @@
-// Global constant definitions
-const weapons = ['rock','paper','scissors','lizard','spock'];
-const weaponsObj = {
-    rock: ["far", "fa-hand-rock"],
-    paper: ["far", "fa-hand-paper"],
-    scissors: ["far", "fa-hand-scissors"],
-    lizard: ["far", "fa-hand-lizard"],
-    spock: ["far", "fa-hand-spock"],
-};
-
-
 // Wait for DOM to finish loading then create event listeners for buttons
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -50,7 +39,6 @@ function startGame(userWeapon){
     updateScores(winner);
     // Clear the result elements after a delay
     setTimeout(() => {clearResult();}, 2000);
-
 }
 
 /**
@@ -70,9 +58,7 @@ function toggleUserButtons(toggleState){
             }
         }
     }
-    
 }
-
 
 /**
  * Get the classes for the instructions sections and toggles the visibility
@@ -99,10 +85,11 @@ function toggleInstructions() {
  * Generates a random selection of a weapon for the computer and returns it to the calling function
  */
 function computerChoice() {
+    // List of weapons
+    const weapons = ['rock','paper','scissors','lizard','spock'];
     //Generate random number between 0 and 4
     let random = Math.floor(Math.random() * 5);
     return weapons[random];
-
 }
 
 /**
@@ -195,7 +182,6 @@ function resultMessage(winningWeapon, losingWeapon) {
     } else if (winningWeapon === 'spock' && losingWeapon === 'rock') {
         return "Spock vaporizes Rock";
     }
-
 }
 
 /**
@@ -203,7 +189,14 @@ function resultMessage(winningWeapon, losingWeapon) {
  * Updates the computer choice icon and data-type attribute
  */
 function toggleChoiceAndFeedback(computerSelectedWeapon) {
-
+    // Create weapons object
+    const weaponsObj = {
+        rock: ["far", "fa-hand-rock"],
+        paper: ["far", "fa-hand-paper"],
+        scissors: ["far", "fa-hand-scissors"],
+        lizard: ["far", "fa-hand-lizard"],
+        spock: ["far", "fa-hand-spock"],
+    };
     // Check if the element is hidden and make it visible
     if (document.getElementById('computer-choice').classList.contains('hidden')) {
         document.getElementById('computer-choice').classList.remove('hidden');
@@ -232,7 +225,6 @@ function toggleChoiceAndFeedback(computerSelectedWeapon) {
 
     // Update the data-type attribute
     document.getElementById('computer-selection-button').setAttribute('data-type', computerSelectedWeapon);
-    
 }
 
 
@@ -255,7 +247,6 @@ function toggleWinnerMessage(winnerData) {
 
     // Show the computer choice
     document.getElementById('computer-choice').classList.remove('hidden');
-
 }
 
 /**
