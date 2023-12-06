@@ -36,7 +36,7 @@ The background image for mobile screens offers a nigh sky theme and is very ligh
 
 ### Wireframes
 Wireframes were created for mobile and desktop displays
-- [Wireframe export](documentation/wireframs_mobile_desktop.pdf)
+- ![Wireframe export](documentation/wireframs_mobile_desktop.pdf)
 
 
 ### Typography
@@ -51,8 +51,9 @@ I chose this font because it is a modern fun font, although it is a cursive font
 
 The website consists of a single page which allows a user to start playing the game immediately.
 Some timeout intervals have been set on the round result and game feedback to improve the user experience.
-- ![Round result feedback](documentation/screen-shots/round-feedback-screenshot.png)
-- ![Game result feedback](documentation/screen-shots/game-feedback-screenshot.png)
+
+![Round result feedback](documentation/screen-shots/round-feedback-screenshot.png)
+![Game result feedback](documentation/screen-shots/game-feedback-screenshot.png)
 
 ## Technology Stack Used
 
@@ -123,13 +124,15 @@ To Clone the Rock, Paper, Scissors, Lizard, Spock repository:
 
 ### W3C Validator
 The W3C validator was used to validate the HTML.
-- [Validation Result](documentation/testing/html_validation.png)
+
+![Validation Result](documentation/testing/html_validation.png)
 
 The W3C jigsaw validator was used to validate the css in the styles.css file.
-- [CSS Validation Result](documentation/testing/css_validation.png)
+
+![CSS Validation Result](documentation/testing/css_validation.png)
 
 JavaScript validation was completed using JSHint.
-- [JavaScript Validation Result]()
+[JavaScript Validation Result]()
 
 ### Resolved Bugs
 
@@ -137,6 +140,15 @@ JavaScript validation was completed using JSHint.
 ### Known Bugs
 
 ###  Performance and Accessibility Testing
+Performance and accessibility testing has been completed using LightHouse for both mobile and desktop displays.
+
+- Mobile result
+
+![Mobile Result](documentation/testing/lighthouse_test_mobile.png)
+
+- Desktop result
+
+![Desktop result](documentation/testing/lighthouse_test_desktop.png)
 
 ## Credits
 
