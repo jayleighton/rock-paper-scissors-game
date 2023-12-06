@@ -99,10 +99,12 @@ function computerChoice() {
  */
 function checkWinner(userWeapon, computerWeapon) {
     
+    // Check for a draw
     if (userWeapon === computerWeapon) {
         let winner = 'draw';
         let result = "The round is tied!";
         return [winner, result];
+    // Test the various user weapons against the computers selection
     } else if (userWeapon === 'rock') {
         if (computerWeapon === 'scissors' || computerWeapon === 'lizard'){
             let winner = 'user';
@@ -227,7 +229,6 @@ function toggleChoiceAndFeedback(computerSelectedWeapon) {
     document.getElementById('computer-selection-button').setAttribute('data-type', computerSelectedWeapon);
 }
 
-
 /**
  * Receives the winner and message as an array and updates the components on the screen
  */
@@ -292,15 +293,21 @@ function updateScores(winnerData) {
  */
 function updateGameScore(winnerToUpdate) {
     if (winnerToUpdate === 'user') {
+        // Get current score
         let gameScore = parseInt(document.getElementById('user-main-score').innerText);
+        // Increment current score
         gameScore += 1;
+        // Update elements
         document.getElementById('user-main-score').innerText = gameScore;
         document.getElementById('game-winner').innerText = 'Game Over. You won!';
         document.getElementById('game-winner').classList.remove('hidden');
         setTimeout(() => {document.getElementById('game-winner').classList.add('hidden');}, 2000 );
     } else {
+        // Get current score
         let gameScore = parseInt(document.getElementById('computer-main-score').innerText);
+        // Increment current score
         gameScore += 1;
+        // Update elements
         document.getElementById('computer-main-score').innerText = gameScore;
         document.getElementById('game-winner').innerText = 'Game Over. You Lost!';
         document.getElementById('game-winner').classList.remove('hidden');

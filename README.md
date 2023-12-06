@@ -7,6 +7,38 @@ The rock, paper, scissors, lizard, spock game is intended to be a fun, simple ga
 
 ## Contents
 
+- [User Experience (UX)](#user-experience-ux)
+    - [User Stories](#user-stories)
+        - [First Time Visitor Goals](#first-time-visitor-goals)
+        - [Returning Visitor Goals](#returning-visitor-goals)
+- [Design](#design)
+    - [Colour Palette](#colour-palette)
+    - [Imagery](#imagery)
+    - [Wireframes](#wireframes)
+    - [Typography](#typography)
+- [Features](#features)
+    - [General Features](#general-features)
+    - [Accessibility]
+- [Technology Stack Used](#technology-stack-used)
+    - [Languages Used](#languages-used)
+    - [Frameworks, Libraries, & Programs Used](#frameworks-libraries--programs-used)
+- [Deployment and Local Development](#deployment--local-development)
+    - [Github Pages Deployment](#github-pages-deployment)
+    - [Local Development](#local-development)
+        - [How to Fork the Repository](#how-to-fork-the-repository)
+        - [How to Clone the Repository](#how-to-clone-the-repository)
+- [Testing](#testing)
+    - [Testing Tools](#testing-tools)
+    - [W3C Validator](#w3c-validator)
+    - [Manual Testing](#manual-testing)
+    - [Resolved Bugs](#resolved-bugs)
+    - [Known Bugs](#known-bugs)
+    - [Performance and Accessibility Testing](#performance-and-accessibility-testing)
+- [Credits](#credits)
+    - [Code Credits](#code-credits)
+    - [Content Credits](#content-credits)
+    - [Media Credits](#media-credits)
+
 ---
 
 ## User Experience (UX)
@@ -29,9 +61,9 @@ The rock, paper, scissors, lizard, spock game is intended to be a fun, simple ga
 ![Project Colour Palette](documentation/colour_palette.png)
 
 ### Imagery
-The imagery on the site is intended to provide an evening sky or outer space feeling because the specific game with the introduction of Lizard and Spock was made famous by a sitcom entitled The  [Big Bang Theory](https://www.youtube.com/watch?v=pIpmITBocfM)
+The imagery on the site is intended to provide an evening sky or outer space feeling because the specific game with the introduction of Lizard and Spock was made famous by a sitcom entitled [The Big Bang Theory](https://www.youtube.com/watch?v=pIpmITBocfM)
 
-The background image for mobile screens offers a nigh sky theme and is very lightweight on bandwidth, while the larger screens will show an image of the evening sky with a much higher resolution.
+The background image for mobile screens offers a nigh sky theme and is very lightweight on bandwidth, while the larger screens will show an image of the evening sky with a higher resolution.
 
 ### Wireframes
 Wireframes were created for mobile and desktop displays
@@ -49,10 +81,20 @@ I chose this font because it is a modern fun font, although it is a cursive font
 ### General Features
 
 The website consists of a single page which allows a user to start playing the game immediately.
-Some timeout intervals have been set on the round result and game feedback to improve the user experience.
+As a result of user feedbacl, some timeout intervals have been set on the round result and game feedback to improve the user experience.
 
 ![Round result feedback](documentation/screen-shots/round-feedback-screenshot.png)
 ![Game result feedback](documentation/screen-shots/game-feedback-screenshot.png)
+
+### Accessibility
+Great care has been taken during the design of the game to ensure that it is as accessible as possible.
+Accessbility testing has also been completed. 
+Refer to the [Performance and Accessibility Testing Section](#performance-and-accessibility-testing) for more information.
+  
+The following has been included in the website with this in mind:
+
+- Use of semantic HTML
+- Ensuring sufficient colour contracts with the selected colour palette
 
 ## Technology Stack Used
 
@@ -134,7 +176,8 @@ The W3C jigsaw validator was used to validate the CSS in the styles.css file.
 ![CSS Validation Result](documentation/testing/css_validation.png)
 
 JavaScript validation was completed using JSHint.
-[JavaScript Validation Result]()
+
+![JavaScript Validation Result](documentation/testing/javascript_validation.png)
 
 ### Manual Testing
 - Table of manual test results
@@ -143,17 +186,17 @@ JavaScript validation was completed using JSHint.
 
 ### Resolved Bugs
 - Instructions element causing overflow on body element. 
-    - Set the element to a fixed height and add scrolling on overflow.
+    - Set the element to a fixed percentage viewport height and add scrolling on overflow.
 - Clicking the computer choice button triggered the game to start as a user selection.
-    - Added data-from attribute to the buttons to identify user and computer buttons for event listeners
-- Feedback was too fast after making a selection leaving the user unsure if something happened.
-    - Added time delays to the display of the computer choice and the result
+    - Added "data-from" attribute to the buttons to identify user and computer buttons for event listeners
+- Feedback was too fast after making a selection leaving the user unsure if something actually happened.
+    - Added time delays to the display of the computer choice and the result to improve the user experience
 - Clicking on the user buttons before the time interval passed to display components caused issues with the flow of the game
     - Added code to disable the user buttons until the result is displayed
 - Unable to scroll to the result when testing with a wide, but short display
     - Correct overflow setting against the body selector causing the overflow to be hidden
 - The element showing the result of the game was not noticeable at the bottom of the screen
-    - Add the element to the top of the game area
+    - Moved the element to the top of the game area for better visibility
 
 ### Known Bugs
 
@@ -179,13 +222,13 @@ Performance and accessibility testing has been completed using Lighthouse for bo
 - Sitepoint.com
     - The setTimeout function to delay sections of script processing was adapted from [sitepoint](https://www.sitepoint.com/javascript-settimeout-function-examples/)
 
-### Content
+### Content Credits
 
 Content for the instructions section was obtained from the World Rock Paper Scissors Association website
 [WRPSA Website](https://wrpsa.com/a-beginners-guide-to-understanding-rock-paper-scissors-lizard-spock/)
 
 
-### Media
+### Media Credits
 - Image for mobile background by <a href="https://unsplash.com/@johnygoerend?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Johny Goerend</a> on <a href="https://unsplash.com/photos/galaxy-wallpaper-Oz2ZQ2j8We8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 - Image for desktop screens by <a href="https://unsplash.com/@wildhoney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">John Fowler</a> on <a href="https://unsplash.com/photos/brown-mountain-under-starry-sky-7Ym9rpYtSdA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
