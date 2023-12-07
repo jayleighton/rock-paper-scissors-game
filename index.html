@@ -49,7 +49,7 @@
       <div class="title-bar">
         <h1>Rock, Paper, Scissors, Lizard, Spock </h1>
         <!-- Toggle button for instructions -->
-        <button data-type="instructions" id="help" title="help">
+        <button aria-label="Show instructions" data-type="instructions" id="help" title="help">
             <i class="fas fa-question-circle fa-spin"></i>
         </button>
       </div>
@@ -95,10 +95,10 @@
           <!-- Controls area -->
           <div id="controls">
             <!-- User buttons -->
-            <button data-type="rock" data-from="user" class="btn btn--big btn-red" title="Rock">
+            <button aria-label="rock" data-type="rock" data-from="user" class="btn btn--big btn-red" title="Rock">
               <i class="far fa-hand-rock fa-spin"></i>
             </button>
-            <button
+            <button aria-label="paper"
               data-type="paper"
               data-from="user" 
               class="btn btn--big btn-blue"
@@ -106,7 +106,7 @@
             >
               <i class="far fa-hand-paper fa-spin"></i>
             </button>
-            <button
+            <button aria-label="scissors"
               data-type="scissors"
               data-from="user" 
               class="btn btn--big btn-purple"
@@ -114,7 +114,7 @@
             >
               <i class="far fa-hand-scissors fa-spin"></i>
             </button>
-            <button
+            <button aria-label="lizard"
               data-type="lizard"
               data-from="user" 
               class="btn btn--big btn-green"
@@ -122,7 +122,7 @@
             >
               <i class="far fa-hand-lizard fa-spin"></i>
             </button>
-            <button
+            <button aria-label="spock"
               data-type="spock"
               data-from="user" 
               class="btn btn--big btn-orange"
@@ -135,7 +135,7 @@
           <div id="computer-choice" class="hidden">
             <h4>Computer Chose:</h4>
             <!-- Button to display computers choice -->
-            <button id="computer-selection-button" data-type="spock" data-from="computer" class="btn btn--big btn-slate-blue">
+            <button aria-label="computers choice" id="computer-selection-button" data-type="spock" data-from="computer" class="btn btn--big btn-slate-blue">
               <i id="computer-button" class=""></i>
             </button>
           </div>
